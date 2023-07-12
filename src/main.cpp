@@ -45,7 +45,7 @@ int main(int argc, char **argv)
         }
         try {
             unsigned long n = std::stoul(line);
-            std::cout << std::hex << encrypt(n) << std::endl;
+            std::cout << "0x" << std::hex << encrypt(n) << std::endl;
         } catch (...) {
             std::cout << "input string is not a number" << std::endl; 
         }
